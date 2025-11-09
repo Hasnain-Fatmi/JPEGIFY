@@ -271,7 +271,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="flex flex-wrap items-center gap-4">
                   <label className="flex items-center gap-2 text-purple-200 cursor-pointer">
                     <input
                       type="checkbox"
@@ -302,10 +302,10 @@ export default function Home() {
 
                   <button
                     onClick={() => fileInputRef.current?.click()}
-                    className="px-6 py-3 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-all flex items-center gap-2"
+                    className="px-6 py-3 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-all flex items-center gap-2 whitespace-nowrap"
                   >
                     <ImageIcon className="w-5 h-5" />
-                    New Image
+                    <span>New Image</span>
                   </button>
                 </div>
               </div>
